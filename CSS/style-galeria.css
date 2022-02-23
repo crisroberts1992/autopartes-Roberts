@@ -1,0 +1,33 @@
+main .containerGaleria{
+    background-color: white;
+    height: 1300px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 25% 25% 25% ;
+    grid-template-areas: "g1 g2""g3 g3""g4 g5""g6 g6";
+    justify-items: center;
+    align-items: center;   
+
+}
+.fotoGaleria1{grid-area: g1;width: 90%;height: 90%;}
+.fotoGaleria2{grid-area: g2;width: 90%;height: 90%;}
+.fotoGaleria3{grid-area: g3;width: 70%;height: 90%;}
+.fotoGaleria4{grid-area: g4;width: 90%;height: 90%;}
+.fotoGaleria5{grid-area:g5;width: 90%;height: 90%;}
+.fotoGaleria6{grid-area: g6;width: 70%;height: 90%;
+}
+
+main .containerGaleria img{width: 90%;height: 90%;}
+
+@media only screen and (max-width:400px){
+    main .containerGaleria{
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(255, 0, 0, 0.685);
+    }
+ main .containerGaleria img{
+     width: 100%;height: 90%;
+ }   
+ main .containerGaleria .fotoGaleria1, .fotoGaleria2, .fotoGaleria3, .fotoGaleria4, .fotoGaleria5, .fotoGaleria6{width: 100%;}
+}

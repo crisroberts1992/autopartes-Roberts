@@ -1,0 +1,218 @@
+*{
+    padding: 0;
+    margin: 0;}
+ 
+header{background-image: linear-gradient(to bottom, rgb(117, 34, 34),  rgba(255, 0, 0, 0.685) ) ;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 70% 30%;
+    grid-template-areas: "a1 a2"
+                         "a1 a3"  ;
+    height:200px ;
+    justify-items: center;
+    align-items: center;
+
+    }
+    header .logoTitulo{ grid-area: a1;
+        
+
+    }
+    header .logoTitulo img{
+        border-radius: 100px;
+    }
+
+header .buscador{
+       
+        grid-area: a3;
+}
+.buscador input{
+    width: 500px;
+    padding: 6px;
+    border: none;
+    margin-bottom: 10px;
+    margin-right: 16px;
+    font-size: 20px;
+}
+
+.nav{background-color:rgba(255, 0, 0, 0.685) ;}
+.nav ul{
+        display: flex;
+        column-gap: 20px;
+        justify-content: center;
+        
+        
+}
+.nav ul li{
+    list-style-type: none;}
+    
+.nav ul li a{
+    color: white;
+    text-decoration: none;
+    
+    
+}
+
+header .titulo{
+    grid-area: a2;
+    margin: 80px 20px 20px 20px;
+    height: 80%;
+    font-size: 30px;
+    font-style: italic;
+    color: white;
+}
+header .titulo h1{
+    text-align: center;
+}
+
+main{
+    height: 1400px;
+    background-color: rgba(255, 0, 0, 0.685);
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: stretch;
+   
+}
+main .filtroRepuestos{
+   padding: 10px;
+    background-color: white;
+}
+main .filtroRepuestos ul{
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    justify-content: space-around;
+    
+}
+main .filtroRepuestos ul li{
+    list-style-type: none;
+}
+main .filtroRepuestos ul li a{
+    color: black;
+    text-decoration: none;
+}
+main #conteiner{height: 95%;
+width:95%;
+background-color:white;
+display: grid;
+grid-template-columns: 25% 25% 25% 25%;
+grid-template-rows: 30% 40% 30%;
+grid-template-areas: "a1 a2 a3 a4"
+                     "a5 a5 a6 a6"
+                     "a7 a8 a9 a10";
+justify-items: center;
+align-items: center;                    
+                   
+  
+                  }
+#conteiner .card{
+    height: 80%;
+    width: 80%;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    flex-direction: column;
+    border: 1px;
+    border-style: outset;
+}
+#conteiner .card img{height: 80%;width: 100%;}
+
+h3{font-family: Verdana, Geneva, Tahoma, sans-serif;}
+p{font-family: Georgia, 'Times New Roman', Times, serif;}
+#cardGrande1{
+    grid-area: a5;
+}
+#cardGrande2{
+    grid-area: a6;
+}
+
+
+footer{background-color: black;
+    color: white;
+height: 100px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+@media only screen and (max-width:400px){
+    *{
+        padding: 0;
+        margin: 0;}
+    
+    header{background-image: linear-gradient(to bottom, rgb(117, 34, 34),  rgba(255, 0, 0, 0.685) ) ;
+        display: flex;
+        flex-direction: column;
+        
+        height:100px ;
+        justify-items: center;
+        align-items: center;
+        justify-content: flex-end;
+    
+        }
+    header .logoTitulo{ display: none;} 
+    header .buscador{display: none;}   
+    header .titulo{font-size: 15px;}
+    .nav ul{display:flex;
+    flex-direction: column;
+align-items: center;}
+    .filtroRepuestos{display: none;}
+    main{
+        height: 1400px;
+        background-color: rgba(255, 0, 0, 0.685);
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+       
+    }
+
+    main #conteiner{height: 90%;
+        width:100%;
+        background-color:white;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr ;
+        
+        grid-template-areas: "a1 a2""a3 a4" "a5 a5" "a6 a6""a7 a8""a9 a10";
+        
+        justify-items: center;
+        align-items: center;                   
+          }
+          #conteiner .card{
+            height: 70%;
+            width: 70%;
+            background-color: rgb(238, 238, 238);
+            display: flex;
+            flex-direction: column;
+            border: 1px;
+            border-style: outset;
+        }
+        #conteiner .card img{height: 90%;width: 100%;}
+        
+        h3{font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: small;}
+        p{display: none;}
+        
+            
+    }
+    
+
+
+    
+        
+            
+    
+  
+    
+   
+
+
+
+
+
+
+
