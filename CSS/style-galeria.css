@@ -20,14 +20,16 @@ main .containerGaleria{
 
 main .containerGaleria img{width: 90%;height: 90%;}
 
-@media only screen and (max-width:400px){
-    main .containerGaleria{
+@media only screen and (max-width:425px){
+main{height: 1600px;}
+main .containerGaleria{
         display: flex;
         flex-direction: column;
-        background-color: rgba(255, 0, 0, 0.685);
+        width: 95%;
+       
     }
- main .containerGaleria img{
-     width: 100%;height: 90%;
+main .containerGaleria img{
+     width: 100%;height: 100%;border:2px ;color: white;border:solid
  }   
- main .containerGaleria .fotoGaleria1, .fotoGaleria2, .fotoGaleria3, .fotoGaleria4, .fotoGaleria5, .fotoGaleria6{width: 100%;}
+main .containerGaleria .fotoGaleria1, .fotoGaleria2, .fotoGaleria3, .fotoGaleria4, .fotoGaleria5, .fotoGaleria6{width: 100%;}
 }
