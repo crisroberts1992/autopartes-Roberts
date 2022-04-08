@@ -1,0 +1,33 @@
+@import "../SCSS/variables";
+
+.containerNosotros{background-color: white;
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+.cardContainer{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 20px;
+    margin-bottom: 10px;
+    border-radius: 2rem;
+    
+    .cardImagen{width: 40%;
+        overflow: hidden;
+    position: relative;
+    border-radius: 2rem 0 0 2rem;
+    flex-basis: 50%;
+    img{height: 100%;width: 100%;}}
+    .cardTexto{width: 50%;color: white;
+        border-radius: 0 2rem 2rem 0;
+        padding: 1.5rem;
+    flex-basis: 50%;
+background-color: $color-fondo;
+height: 60%;}}
+    
+}
+
+

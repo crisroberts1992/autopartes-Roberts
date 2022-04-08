@@ -1,4 +1,8 @@
 @import "_variables.scss";
+@import"_productos.scss";
+@import"_contacto.scss";
+@import"_nosotros.scss";
+@import"_preguntas.scss";
 
 *{
     padding: 0;
@@ -43,7 +47,42 @@ header{
 .nav ul li a{
     color: white;
     text-decoration: none; }   
-        
+    .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      .dropbtn {
+        background-color: $color-fondo;
+        color: white;
+        padding: 0px;
+        font-size: 2vw;
+        border: none;
+        cursor: pointer;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      .dropdown-content a:hover {background-color: $color-fondo;color: black;} 
+      .dropdown:hover .dropdown-content {
+        display: block;
+        background-color: $color-fondo;
+        color: white;}
+        .dropdown:hover .dropbtn {
+            background-color: white;
+            color: $color-fondo;
+          }       
+                 
     header .titulo{
         grid-area: a2;
         margin: 80px 20px 20px 20px;
@@ -57,76 +96,44 @@ header{
     }
 
 main{
-    @include altoAncho(1600px,100%) ;
-    background-color: $color-fondo;
+    @include altoAncho(auto,100%) ;
+    background-color: white;
+    margin-top: 30px;
     display: flex;
-    align-content: center;
+    align-content: flex-start;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content:space-around;
+    justify-content:flex-start;
     align-items: stretch;
-        #conteiner{
-            @include altoAncho(95%,95%);
-            background-color:white;
-            display: grid;
-            grid-template-columns: 25% 25% 25% 25%;
-            grid-template-rows: 30% 40% 30%;
-            grid-template-areas: "a1 a2 a3 a4"
-                             "a5 a5 a6 a6"
-                             "a7 a8 a9 a10";
-            justify-items: center;
-            align-items: center;
-                .card{@extend .cards;
-                    img{@include altoAncho(80%,100%)}}                    
-                     }
-    }
-            #conteiner .card h3{font-family: Verdana, Geneva, Tahoma, sans-serif;
-                    font-size: 2.5vw;height: 10%;margin: 0;}
-            #conteiner .card p{font-family: Georgia, 'Times New Roman', Times, serif;
-                ;height: 5%;margin: 0;}
-        #cardGrande1{
-                    grid-area: a5;
+    .carousel{width: 100%;position: relative;}
+       
                 }
-        #cardGrande2{
-                    grid-area: a6;
-                }
-    main .filtroRepuestos{
-        padding: 10px;
-         background-color: white;
-         animation-name: animacionFiltro;
-         animation-duration: 3s;
-         
-         
-     }
-     main .filtroRepuestos ul{
-         display: flex;
-         column-gap: 10px;
-         justify-content: center;
-         justify-content: space-around;
-         
-     }
-     main .filtroRepuestos ul li{
-         list-style-type: none;
-         font-size: 1.4vw;
-         
-     }
-     main .filtroRepuestos ul li a{
-         color: black;
-         text-decoration: none;
-     }
+    .ofertas{background-color: gray;width: 100%;
+        .tituloOferta{background-color: $color-fondo;width: 100%;};
+    .cardOfertas{display: flex;
+    flex-direction: row;
+width: 80%;}}
     footer{
-        @include altoAncho(100px,100%);
+        @include altoAncho(200px,100%);
         background-color: black;
         color: white;
         display: flex;
         align-items: center;
         justify-content: space-around;
+        align-items: flex-start;
+        .datosContacto h5{font-size: calc(1rem + .3vw);color: $color-fondo;height: 100%;text-decoration: underline;};
+        .iconosContacto{ font-size:calc(1.50rem + .3vw)};
+        .iconosContacto a{color: white};
+        .productosFooter h5{font-size: calc(1rem + .3vw);color: $color-fondo;height: 100%;text-decoration: underline;}
+        .productosFooter p a {color: white;text-decoration: none;}
+        .iconosFooter{width: 15%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;}
     }
-        footer .datosContacto h4{font-size: calc(1rem + .3vw)}
-
-        footer .iconosContacto{ font-size:calc(1.50rem + .3vw)}
-
-        footer .iconosContacto a{color: white;}
+     
    @media only screen and (max-width:415px){
             *{
                 padding: 0;

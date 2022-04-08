@@ -6,16 +6,16 @@
    <meta name="keywords" content="autopartes , autopartes cordoba , autopartes usadas , autopiezas , autopiezas usadas, repuestos usados , repuestos cordoba"> 
     <meta name="description" content="Somos Autopartes CBA, venta de repuestos y autopiezas usadas originales. Todas las marcas y modelos.Estamos ubicados en Cordoba Capital.">
    <title>AUTOPARTES CBA</title>
+   <link rel="stylesheet" href="../repoAutopartesRoberts/CSS/style.css">
+    <link rel="stylesheet" href="../repoAutopartesRoberts/CSS/animaciones.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../repoAutopartesRoberts/CSS/style.css">
-    <link rel="stylesheet" href="../repoAutopartesRoberts/CSS/style-galeria.css">
-    <link rel="stylesheet" href="../repoAutopartesRoberts/CSS/animaciones.css">
+    
 </head>
 <body>
     <header>
-        <div class=logoTitulo><img src="../Autopartes+Roberts/IMG/descarga (1).png" alt="logo"></div>
+        <div class=logoTitulo><img src="../repoAutopartesRoberts/IMG/descarga (1).png" alt="logo"></div>
         <div class=titulo><H1>AUTOPARTES CBA</H1></div>
        
          <div class=buscador>
@@ -32,95 +32,116 @@
             <li>
                 <a href="html/contacto.html">CONTACTO</a>
             </li>
+            <li class="dropdown">
+                
+                    <a class="dropbtn" href="../repoAutopartesRoberts/HTML/productos.html">PRODUCTOS</a>
+                    <div class="dropdown-content">
+                      <a href="html/productos.html#productos_puertas">PUERTAS</a>
+                      <a href="html/productos.html#productos_guardabarros">GUARDABARROS</a>
+                      <a href="html/productos.html#productos_motores">MOTORES</a>
+                      <a href="html/productos.html#productos_cajas">CAJAS</a>
+                    </div>
+                  
+            </li>
             <li>
                 <a href="html/nosotros.html">NOSOTROS</a>
-        
             </li>
             <li>
-                <a href="html/galeria.html">GALERIA</a>
-            </li>
-            <li>
-                <a href="html/productos.html">PRODUCTOS</a>
+                <a href="html/preguntas.html">PREGUNTAS FRECUENTES</a>
             </li>
         </ul>
     </div>
     <main>
-        <div class=filtroRepuestos>
-            <ul>
-                <li><a href="HTML/productos.html">MOTORES</a> </li>
-                <li><a href="HTML/productos.html">CAJAS</a> </li>
-                <li><a href="HTML/productos.html">PUERTAS</a> </li>
-                <li><a href="HTML/productos.html">PORTONES</a> </li>
-                <li><a href="HTML/productos.html">GUARDABARROS</a> </li>
-                
-            </ul>
-
+        <div class="carousel">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../repoAutopartesRoberts/IMG/rack 5.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>First slide label</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../repoAutopartesRoberts/IMG/racks 3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../repoAutopartesRoberts/IMG/autopartes cba.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </div>
-        <div id=conteiner>
+        <div class="ofertas">
+            <div class="tituloOfertas"><h2>OFERTAS DEL MES !!!</h2></div>
+        
+        <div class=cardOfertas>
             <div class=card>
-                <img src="../repoAutopartesRoberts/IMG/WhatsApp Image 2022-01-29 at 09.14.14.jpeg" alt="oferta1">
-                <h3>$8.000</h3>
-                <p>Puerta trasera Siena</p>
-             </div>
-            <div class=card>
-                <img src="../repoAutopartesRoberts/IMG/WhatsApp Image 2022-01-24 at 16.05.19.jpeg" alt="oferta2">
+                <img src="../IMG/GUARDABARROS/AMAROK.jpeg" alt="oferta2">
                 <h3>$10.000</h3>
-                <p>Puerta delantera Zafira</p>
-            </div>
-            <div class=card>
-                <img src="../repoAutopartesRoberts/IMG/WhatsApp Image 2022-01-26 at 10.20.12.jpeg" alt="oferta3">
-                <h3>$12.000</h3>
-                <p>Porton trasero Onix</p>
-            </div>
-            <div class=card>
-                <img src="../repoAutopartesRoberts/IMG/WhatsApp Image 2022-01-26 at 10.27.46.jpeg" alt="oferta 4">
-                <h3>$6.000</h3>
-                <p>Guardabarro Onix</p>
-            </div>
-            <div class=card id=cardGrande1>
-                <img src="../repoAutopartesRoberts/IMG/autopartes cba.jpeg" alt="predio">
-                <h3>Retiro por sucursales</h3>
-                <p>Retiros en persona por nuestras dos sucursales <br> ubicadas en Colonia Caroya y Cordoba capital </p>
-            </div>
-            <div class=card id=cardGrande2>
-                <img src="../repoAutopartesRoberts/IMG/cajas-paquetes-camion-contenedor-envio_36860-1079.jpg" alt="transporte">
-                <h3>Envios a todo el pais</h3>
-                <p>Envios a domicilio a todo el pais <br> con todas las empresas de transporte</p>
-             </div>
-             <div class=card>
-                <img src="../repoAutopartesRoberts/IMG/WhatsApp Image 2022-02-07 at 12.17.19.jpeg" alt="oferta5">
-                <h3>$8.000</h3>
                 <p>Guardabarro Amarok</p>
-             </div>
-             <div class=card >
-                <img src="../repoAutopartesRoberts/IMG/WhatsApp Image 2022-02-07 at 12.17.20.jpeg" alt="oferta6">
-                <h3>$15.000</h3>
-                <p>Puerta de Amarok</p>
-             </div>
-             <div class=card>
-                <img src="../repoAutopartesRoberts/IMG/WhatsApp Image 2022-02-01 at 11.23.44.jpeg" alt="oferta7">
-                <h3>$25.000</h3>
-                <p>Caja de cambios C3 1.5</p>
-             </div>
-             <div class=card>
-                <img src="../repoAutopartesRoberts/IMG/WhatsApp Image 2022-02-11 at 12.07.49.jpeg" alt="oferta8">
-                <h3>$75.000</h3>
-                <p>Motor Gol Trend 1.6</p>
-             </div>
-
-            
-
+                <a href=""><button type="button" class="btn btn-danger">Comprar</button></a>         
         </div>
+        <div class=card>
+            <img src="../IMG/GUARDABARROS/AMAROK.jpeg" alt="oferta2">
+            <h3>$10.000</h3>
+            <p>Guardabarro Amarok</p>
+            <a href=""><button type="button" class="btn btn-danger">Comprar</button></a>         
+    </div>
+    <div class=card>
+        <img src="../IMG/GUARDABARROS/AMAROK.jpeg" alt="oferta2">
+        <h3>$10.000</h3>
+        <p>Guardabarro Amarok</p>
+        <a href=""><button type="button" class="btn btn-danger">Comprar</button></a>         
+        </div>
+    </div>
+    </div>
+       
     </main>
     <footer>
         <div class=datosContacto>
-            <h4>Telefono: 3512364537</h4>
-            <h4>Direccion: Av La voz del interior 6534</h4>
-            <h4>E-mail: autopartescba@outlook.com</h4>
+            <h5>CONTACTO</h5>
+            <p><i class="bi bi-telephone"></i>  +5493512364537"</p>
+            <p><i class="bi bi-house"></i>  Av La voz del interior 6534"</p>
+            <p> <i class="bi bi-envelope"></i>  autopartescba@outlook.com"</p>
         </div>
-        <div class=iconosContacto><a href=""><i class="bi bi-facebook"></i></a></div>
-        <div class=iconosContacto><a href=""><i class="bi bi-whatsapp"></i></a></div>
-        <div class=iconosContacto><a href=""><i class="bi bi-instagram"></i></a></div>
+        
+        <div class=productosFooter>
+            <h5>PRODUCTOS</h5>
+            <p><a href="">PUERTAS</a></p>
+            <p><a href="">GUARDABARROS</a></p>
+            <p><a href="">MOTORES</a></p>
+            <p><a href="">CAJAS</a></p>
+        </div>
+            <div class=iconosFooter>
+                <div class=iconosContacto><a href=""><i class="bi bi-facebook"></i></a></div>
+             <div class=iconosContacto><a href=""><i class="bi bi-whatsapp"></i></a></div>
+            <div class=iconosContacto><a href=""><i class="bi bi-instagram"></i></a></div>
+            </div>
+            
+
+       
+        
 
     </footer>
 

@@ -1,0 +1,55 @@
+@import "../SCSS/variables";
+#mainContacto{background-color: white;justify-content: flex-start;margin-top: 30px;}
+.tituloPagina{
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    h2{color: white;text-decoration: underline;}
+    hr{border: 2px solid $color-fondo;}
+}
+.cuadroContacto{margin-top: 50px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "a1 a2"
+                         "a3 a2"
+                         "a4 a2"  ;
+    justify-items: center;
+    align-items: center;
+    .mapaContacto{grid-area: a2;
+            }
+    .iconoContacto{margin-bottom: 2px;
+        border: solid;
+        color: $color-fondo;
+        background-color: black;
+        p{color: white;};
+        h3{color: white;};
+        i{color: white;font-size: 20px;};
+        width: 17rem;
+        background-color: black;
+        border-radius: 2rem;
+        text-align: center;}
+    
+} 
+
+.consulta{width: 100%;
+    margin-top: 120px;
+    margin-bottom: 50px;
+    .tituloConsulta{
+        background-color: black;color: white;text-align: center;
+    }
+    .formulario{
+        border-radius: 2rem;
+        border: solid;
+        color: $color-fondo;
+        background-color: black;width: 60%;
+        h5{color: white;};
+        margin: auto;
+        margin-top: 50px;
+        text-align: center;
+        .form-control{width: 90%;margin: auto;};
+        button{width: 20%;margin-bottom: 5px;}
+
+        }
+    
+}

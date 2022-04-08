@@ -1,4 +1,14 @@
-.cards, main #conteiner .card {
+.tituloPagina {
+  width: 100%;
+  background-color: black;
+  text-align: center; }
+  .tituloPagina h2 {
+    color: white;
+    text-decoration: underline; }
+  .tituloPagina hr {
+    border: 2px solid rgba(255, 0, 0, 0.685); }
+
+.cards, .cards_productos .card, #productos_puertas .card, #productos_guardabarros .card, #productos_motores .card, #productos_cajas .card {
   height: 80%;
   width: 80%;
   background-color: #eeeeee;
@@ -9,6 +19,278 @@
   transition: all 1s;
   align-items: center;
   justify-content: flex-start; }
+
+.tituloPagina {
+  width: 100%;
+  background-color: black;
+  text-align: center; }
+  .tituloPagina h2 {
+    color: white;
+    text-decoration: underline; }
+  .tituloPagina hr {
+    border: 2px solid rgba(255, 0, 0, 0.685); }
+
+.cards, .cards_productos .card, #productos_puertas .card, #productos_guardabarros .card, #productos_motores .card, #productos_cajas .card {
+  height: 80%;
+  width: 80%;
+  background-color: #eeeeee;
+  display: flex;
+  flex-direction: column;
+  border: 1px;
+  border-style: outset;
+  transition: all 1s;
+  align-items: center;
+  justify-content: flex-start; }
+
+.cards_productos {
+  height: 95%;
+  width: 95%;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center; }
+  .cards_productos .card img {
+    height: 80%;
+    width: 100%; }
+  .cards_productos .card h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5vw;
+    height: 10%;
+    margin: 0; }
+  .cards_productos .card p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 5%;
+    margin: 0; }
+
+#main_productos {
+  height: auto; }
+
+#container_productos {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+
+#productos_puertas, #productos_guardabarros, #productos_motores, #productos_cajas {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "a1 a2 a3 a4" "a5 a6 a7 a8" "a9 a10 a11 a12";
+  justify-items: center;
+  align-items: center; }
+  #productos_puertas .card img, #productos_guardabarros .card img, #productos_motores .card img, #productos_cajas .card img {
+    height: 70%;
+    width: 100%; }
+  #productos_puertas .card h3, #productos_guardabarros .card h3, #productos_motores .card h3, #productos_cajas .card h3 {
+    height: 12%; }
+  #productos_puertas .card p, #productos_guardabarros .card p, #productos_motores .card p, #productos_cajas .card p {
+    height: 8%; }
+  #productos_puertas .card a, #productos_guardabarros .card a, #productos_motores .card a, #productos_cajas .card a {
+    height: 10%; }
+
+.titulos_productos {
+  height: 50px;
+  color: white;
+  text-align: center;
+  background-color: black; }
+
+.tituloPagina {
+  width: 100%;
+  background-color: black;
+  text-align: center; }
+  .tituloPagina h2 {
+    color: white;
+    text-decoration: underline; }
+  .tituloPagina hr {
+    border: 2px solid rgba(255, 0, 0, 0.685); }
+
+.cards, .cards_productos .card, #productos_puertas .card, #productos_guardabarros .card, #productos_motores .card, #productos_cajas .card {
+  height: 80%;
+  width: 80%;
+  background-color: #eeeeee;
+  display: flex;
+  flex-direction: column;
+  border: 1px;
+  border-style: outset;
+  transition: all 1s;
+  align-items: center;
+  justify-content: flex-start; }
+
+#mainContacto {
+  background-color: white;
+  justify-content: flex-start;
+  margin-top: 30px; }
+
+.tituloPagina {
+  width: 100%;
+  background-color: black;
+  text-align: center; }
+  .tituloPagina h2 {
+    color: white;
+    text-decoration: underline; }
+  .tituloPagina hr {
+    border: 2px solid rgba(255, 0, 0, 0.685); }
+
+.cuadroContacto {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "a1 a2" "a3 a2" "a4 a2";
+  justify-items: center;
+  align-items: center; }
+  .cuadroContacto .mapaContacto {
+    grid-area: a2; }
+  .cuadroContacto .iconoContacto {
+    margin-bottom: 2px;
+    border: solid;
+    color: rgba(255, 0, 0, 0.685);
+    background-color: black;
+    width: 17rem;
+    background-color: black;
+    border-radius: 2rem;
+    text-align: center; }
+    .cuadroContacto .iconoContacto p {
+      color: white; }
+    .cuadroContacto .iconoContacto h3 {
+      color: white; }
+    .cuadroContacto .iconoContacto i {
+      color: white;
+      font-size: 20px; }
+
+.consulta {
+  width: 100%;
+  margin-top: 120px;
+  margin-bottom: 50px; }
+  .consulta .tituloConsulta {
+    background-color: black;
+    color: white;
+    text-align: center; }
+  .consulta .formulario {
+    border-radius: 2rem;
+    border: solid;
+    color: rgba(255, 0, 0, 0.685);
+    background-color: black;
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center; }
+    .consulta .formulario h5 {
+      color: white; }
+    .consulta .formulario .form-control {
+      width: 90%;
+      margin: auto; }
+    .consulta .formulario button {
+      width: 20%;
+      margin-bottom: 5px; }
+
+.tituloPagina {
+  width: 100%;
+  background-color: black;
+  text-align: center; }
+  .tituloPagina h2 {
+    color: white;
+    text-decoration: underline; }
+  .tituloPagina hr {
+    border: 2px solid rgba(255, 0, 0, 0.685); }
+
+.cards, .cards_productos .card, #productos_puertas .card, #productos_guardabarros .card, #productos_motores .card, #productos_cajas .card {
+  height: 80%;
+  width: 80%;
+  background-color: #eeeeee;
+  display: flex;
+  flex-direction: column;
+  border: 1px;
+  border-style: outset;
+  transition: all 1s;
+  align-items: center;
+  justify-content: flex-start; }
+
+.containerNosotros {
+  background-color: white;
+  width: 70%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px; }
+  .containerNosotros .cardContainer {
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 20px;
+    margin-bottom: 10px;
+    border-radius: 2rem; }
+    .containerNosotros .cardContainer .cardImagen {
+      width: 40%;
+      overflow: hidden;
+      position: relative;
+      border-radius: 2rem 0 0 2rem;
+      flex-basis: 50%; }
+      .containerNosotros .cardContainer .cardImagen img {
+        height: 100%;
+        width: 100%; }
+    .containerNosotros .cardContainer .cardTexto {
+      width: 50%;
+      color: white;
+      border-radius: 0 2rem 2rem 0;
+      padding: 1.5rem;
+      flex-basis: 50%;
+      background-color: rgba(255, 0, 0, 0.685);
+      height: 60%; }
+
+.tituloPagina {
+  width: 100%;
+  background-color: black;
+  text-align: center; }
+  .tituloPagina h2 {
+    color: white;
+    text-decoration: underline; }
+  .tituloPagina hr {
+    border: 2px solid rgba(255, 0, 0, 0.685); }
+
+.cards, .cards_productos .card, #productos_puertas .card, #productos_guardabarros .card, #productos_motores .card, #productos_cajas .card {
+  height: 80%;
+  width: 80%;
+  background-color: #eeeeee;
+  display: flex;
+  flex-direction: column;
+  border: 1px;
+  border-style: outset;
+  transition: all 1s;
+  align-items: center;
+  justify-content: flex-start; }
+
+.containerPreguntas {
+  width: 80%;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  .containerPreguntas .cardPreguntas {
+    display: flex;
+    background-color: white;
+    margin-bottom: 50px;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center; }
+    .containerPreguntas .cardPreguntas .iconoPreguntas {
+      width: 30%;
+      background-color: rgba(255, 0, 0, 0.685);
+      height: 150px;
+      border-radius: 2rem;
+      text-align: center; }
+      .containerPreguntas .cardPreguntas .iconoPreguntas i {
+        font-size: 4rem; }
+      .containerPreguntas .cardPreguntas .iconoPreguntas p {
+        font-size: large; }
+    .containerPreguntas .cardPreguntas .accordion {
+      width: 68%; }
+    .containerPreguntas .cardPreguntas .accordion-item {
+      border: solid rgba(255, 0, 0, 0.685); }
 
 * {
   padding: 0;
@@ -55,6 +337,45 @@ header {
   color: white;
   text-decoration: none; }
 
+.dropdown {
+  position: relative;
+  display: inline-block; }
+
+.dropbtn {
+  background-color: rgba(255, 0, 0, 0.685);
+  color: white;
+  padding: 0px;
+  font-size: 2vw;
+  border: none;
+  cursor: pointer; }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1; }
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block; }
+
+.dropdown-content a:hover {
+  background-color: rgba(255, 0, 0, 0.685);
+  color: black; }
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-color: rgba(255, 0, 0, 0.685);
+  color: white; }
+
+.dropdown:hover .dropbtn {
+  background-color: white;
+  color: rgba(255, 0, 0, 0.685); }
+
 header .titulo {
   grid-area: a2;
   margin: 80px 20px 20px 20px;
@@ -67,83 +388,64 @@ header .titulo h1 {
   text-align: center; }
 
 main {
-  height: 1600px;
+  height: auto;
   width: 100%;
-  background-color: rgba(255, 0, 0, 0.685);
+  background-color: white;
+  margin-top: 30px;
   display: flex;
-  align-content: center;
+  align-content: flex-start;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: stretch; }
-  main #conteiner {
-    height: 95%;
-    width: 95%;
-    background-color: white;
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 30% 40% 30%;
-    grid-template-areas: "a1 a2 a3 a4" "a5 a5 a6 a6" "a7 a8 a9 a10";
-    justify-items: center;
-    align-items: center; }
-    main #conteiner .card img {
-      height: 80%;
-      width: 100%; }
+  main .carousel {
+    width: 100%;
+    position: relative; }
 
-#conteiner .card h3 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 2.5vw;
-  height: 10%;
-  margin: 0; }
-
-#conteiner .card p {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  height: 5%;
-  margin: 0; }
-
-#cardGrande1 {
-  grid-area: a5; }
-
-#cardGrande2 {
-  grid-area: a6; }
-
-main .filtroRepuestos {
-  padding: 10px;
-  background-color: white;
-  animation-name: animacionFiltro;
-  animation-duration: 3s; }
-
-main .filtroRepuestos ul {
-  display: flex;
-  column-gap: 10px;
-  justify-content: center;
-  justify-content: space-around; }
-
-main .filtroRepuestos ul li {
-  list-style-type: none;
-  font-size: 1.4vw; }
-
-main .filtroRepuestos ul li a {
-  color: black;
-  text-decoration: none; }
+.ofertas {
+  background-color: gray;
+  width: 100%; }
+  .ofertas .tituloOferta {
+    background-color: rgba(255, 0, 0, 0.685);
+    width: 100%; }
+  .ofertas .cardOfertas {
+    display: flex;
+    flex-direction: row;
+    width: 80%; }
 
 footer {
-  height: 100px;
+  height: 200px;
   width: 100%;
   background-color: black;
   color: white;
   display: flex;
   align-items: center;
-  justify-content: space-around; }
-
-footer .datosContacto h4 {
-  font-size: calc(1rem + .3vw); }
-
-footer .iconosContacto {
-  font-size: calc(1.50rem + .3vw); }
-
-footer .iconosContacto a {
-  color: white; }
+  justify-content: space-around;
+  align-items: flex-start; }
+  footer .datosContacto h5 {
+    font-size: calc(1rem + .3vw);
+    color: rgba(255, 0, 0, 0.685);
+    height: 100%;
+    text-decoration: underline; }
+  footer .iconosContacto {
+    font-size: calc(1.50rem + .3vw); }
+  footer .iconosContacto a {
+    color: white; }
+  footer .productosFooter h5 {
+    font-size: calc(1rem + .3vw);
+    color: rgba(255, 0, 0, 0.685);
+    height: 100%;
+    text-decoration: underline; }
+  footer .productosFooter p a {
+    color: white;
+    text-decoration: none; }
+  footer .iconosFooter {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
 
 @media only screen and (max-width: 415px) {
   * {

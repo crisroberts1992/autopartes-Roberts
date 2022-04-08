@@ -1,5 +1,11 @@
  $color-fondo: rgba(255, 0, 0, 0.685);
-
+ .tituloPagina{
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    h2{color: white;text-decoration: underline;}
+    hr{border: 2px solid $color-fondo;}
+}
 .cards{
     height: 80%;
     width: 80%;

@@ -33,37 +33,73 @@
             <li>
                 <a href="../HTML/contacto.html">CONTACTO</a>
             </li>
+            <li class="dropdown">
+                
+                    <a class="dropbtn" href="../HTML/productos.html">PRODUCTOS</a>
+                    <div class="dropdown-content">
+                      <a href="../HTML/productos.html#productos_puertas">PUERTAS</a>
+                      <a href="../HTML/productos.html#productos_guardabarros">GUARDABARROS</a>
+                      <a href="../HTML/productos.html#productos_motores">MOTORES</a>
+                      <a href="../HTML/productos.html#productos_cajas">CAJAS</a>
+                    </div>
+                  
+            </li>
             <li>
                 <a href="../HTML/nosotros.html">NOSOTROS</a>
-        
             </li>
             <li>
-                <a href="../HTML/galeria.html">GALERIA</a>
-            </li>
-            <li>
-                <a href="../HTML/productos.html">PRODUCTOS</a>
+                <a href="../HTML/preguntas.html">PREGUNTAS FRECUENTES</a>
             </li>
         </ul>
     </div>
-<main>
-    <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">NOMBRE Y APELLIDO </label>
-        <input type="form-label" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese nombre y apellido">
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">TELEFONO </label>
-        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese numero de telefono">
-      </div>
-    <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">DIRECCION DE E-MAIL</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">CONSULTA</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder="Ingrese su consulta..." ></textarea>
-      </div>
-      <button type="button" class="btn btn-light">ENVIAR</button>
-      
+<main id=mainContacto>
+    <div class=tituloPagina><hr><h2>CONTACTO</h2><hr></div>
+    <div class=cuadroContacto>
+        <div class=iconoContacto> <i class="bi bi-geo-alt"></i>
+            <h3>UBICACIÓN</h3>
+            <p>Av.La Voz Del Interior 6832</p>
+            <p>Cordoba Capital, Argentina</p>
+        </div>
+        <div class=iconoContacto><i class="bi bi-clock"></i>
+            <h3>HORARIOS</h3>
+            <p>Lunes a Viernes - 08:30 a 18:30hs</p>
+            <p>Sábados - 08:30 a 12:30hs</p>
+        </div>
+        <div class=iconoContacto><i class="bi bi-whatsapp"></i>
+            <h3>TELÉFONO</h3>
+            <p>3525-633871</p>
+            <p>3525-628433</p>
+        </div>
+        <div class=mapaContacto> 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3407.754555393738!2d-64.20993418516065!3d-31.338150899607136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329964c7dabcc9%3A0xb32f36514cd9234f!2sAv.%20La%20Voz%20del%20Interior%206832%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1649290419675!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </div>
+    <div class=consulta>
+        <div class=tituloConsulta><h2>DEJANOS TU CONSULTA</h2></div>
+        <div class=formulario>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"><h5>NOMBRE Y APELLIDO</h5> </label>
+                <input type="form-label" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese nombre y apellido">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"> <h5>TELEFONO</h5> </label>
+                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese numero de telefono">
+              </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"><h5>DIRECCION DE E-MAIL</h5></label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"><h5>CONSULTA</h5></label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder="Ingrese su consulta..." ></textarea>
+              </div>
+              <button type="button" class="btn btn-light">ENVIAR</button>
+    
+        </div>
+                 
+    </div>
+     
       
       
 </main>
