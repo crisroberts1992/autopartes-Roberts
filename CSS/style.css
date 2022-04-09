@@ -401,6 +401,8 @@ main {
   main .carousel {
     width: 100%;
     position: relative; }
+    main .carousel .carousel-item .carousel-caption {
+      background-color: rgba(0, 0, 0, 0.5); }
 
 .ofertas {
   background-color: gray;
